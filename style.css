@@ -1,0 +1,630 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.1em;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 20px;
+}
+
+@media only screen and (min-width: 1000px){
+    header {
+        display: inline-block;
+        padding-bottom: 0;
+    }
+}
+
+header nav {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px){
+    header nav {
+        display: inline-block;
+        padding-left: 230px;
+    }
+    header nav a {
+        color: #555555;
+        font-size: 0.4em;
+        letter-spacing: 0.2px;
+        padding: 2px;
+        text-decoration: none;
+    }
+
+    header nav a:last-child {
+        color: #FF3998;
+    }
+}
+
+.menuimg {
+    padding: 10px;
+}
+
+@media only screen and (min-width: 1000px){
+    header img {
+        width: 60px;
+    }
+
+    .menuimg {
+        display: none;
+    }
+}
+
+.hero {
+    display:flex;
+    flex-wrap: nowrap;
+    height: 448px;
+    width: 482.62px;
+}
+
+@media only screen and (min-width: 1000px){
+    .hero {
+        height: 200px;
+    }
+}
+
+.text {
+    height: 410px;
+    left: 32px;
+    position: absolute;
+    top: 120px;
+    width: 300px;
+}
+
+@media only screen and (min-width: 1000px){
+    .text {
+        top: 100px;
+        width: 180px;
+    }
+}
+
+.text .title {
+    color: #FF3998;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1000px){
+    .text .title {
+        font-size: 5px;
+        letter-spacing: 0.2px;
+    }
+}
+
+.text h1 {
+    font-size: 2.60em;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 1000px){
+    .text h1 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        margin-top: 8px;
+    }
+}
+
+.text .desc {
+    color: #555555;
+    font-size: 1em;
+    letter-spacing: 0.5px;
+    line-height: 1.6em;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 1000px){
+    .text .desc {
+        font-size: 0.42em;
+        letter-spacing: 0.1px;
+        margin-top: 0px;
+        padding-bottom: 5px;
+    }
+
+    .text .desc br {
+        display: none;
+    } 
+}
+
+button {
+    background:
+      url(https://wallpaperaccess.com/full/1227835.jpg) padding-box fixed,
+      linear-gradient(-150deg, #afe82a 0%, #e70b34 40%) border-box;
+    border:3px solid transparent;
+    border-radius:50px;
+    color: black;
+    font-size:20px;
+    font-weight: bolder;
+    height: 70px;
+    margin: auto;
+    margin-left: 0;
+    text-align:center;
+    width: 170px;
+}
+
+button:hover {
+    background:
+      linear-gradient(-45deg, #2ae88a 0%, #ea6208 100%) border-box;
+}
+
+@media only screen and (min-width: 1000px){
+    button {
+        border: 1.3px solid transparent;
+        font-size: 6px;
+        height: 22px;
+        margin: auto;
+        padding-top: 2px;
+        width: 55px;
+    }
+}
+
+.graphic img {
+    height: 520px;
+    left: 180px;
+    object-fit: contain;
+    position: absolute;
+    top: -20px;
+    width: 378.52px;
+}
+
+@media only screen and (min-width: 1000px){
+    .graphic img {
+        height: 620px;
+        left: 215px;
+        top: -125px;
+        width: 230px;
+    }
+}
+
+.upsell {
+    background-image: linear-gradient(to right, rgba(255, 0, 51, 0.661), rgba(246, 215, 16, 0.752));
+    margin-top: 70px;
+    padding: 80px 10px 10px 30px;
+    width: fit-content;
+}
+
+@media only screen and (min-width: 1000px){
+    .upsell {
+        border-radius: 5px;
+        margin-left: 28px;
+        margin-top: 70px;
+        padding: 40px 10px 10px 20px;
+        width: 376px;
+    }
+}
+
+.upsell h1 {
+    font-size: 2.1em;
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 1000px){
+    .upsell h1 {
+        font-size: 0.75em;
+        letter-spacing: 0.1px;
+        margin-bottom: 5px;
+    }
+}
+
+.upsell p {
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+    line-height: 1.5em;
+    margin-top: 0;
+}
+
+@media only screen and (min-width: 1000px){
+    .upsell p {
+        font-size: 0.39em;
+        letter-spacing: 0.1px;
+    }
+}
+
+.press {
+    align-items: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 50px 10px;
+}
+
+@media only screen and (min-width: 1000px){
+    .press {
+        display: block;
+        margin: 0;
+        margin-left: 25px;
+        margin-top: 25px;
+    }
+}
+
+.press :nth-child(4) {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px){
+    .press :nth-child(4) {
+        display: inline;
+    }
+}
+
+.press img {
+    height: 40px;
+    object-fit: container;
+    width: 150px;
+}
+
+@media only screen and (min-width: 1000px){
+    .press img {
+        height: 20px;
+        object-fit: container;
+        padding: 7px 7px 6px 8px;
+        width: 62px;
+    }
+}
+
+.showcase {
+    padding-bottom: 80px;
+    padding-left: 30px;
+}
+
+@media only screen and (min-width: 1000px){
+    .showcase {
+        margin-top: 30px;
+        padding-bottom: 40px;
+    }
+}
+.showcase h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 0.1px;
+}
+
+@media only screen and (min-width: 1000px){
+    .showcase h1 {
+        font-size: 0.76em;
+        letter-spacing: 0.1px;
+        font-weight: 600;
+    }
+}
+
+.showcase p {
+    color: #555555;
+    font-size: 1.20em;
+    letter-spacing: 0.2px;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+}
+
+@media only screen and (min-width: 1000px){
+    .showcase p {
+        font-size: 0.38em;
+        letter-spacing: 0.1px;
+        padding-bottom: 10px;
+    }
+}
+
+.opensea {
+    color: #555555;
+    font-size: 1.10em;
+    letter-spacing: 0.2px;
+    text-decoration: underline;
+}
+
+.profiles {
+    display: flex;
+    gap: 20px;
+}
+
+@media only screen and (min-width: 1000px){
+    .profiles {
+        gap: 15px;
+    }
+}
+
+.purpleman, .beige, .redman, .green {
+    background-color: #EEEEEE;
+    border-radius: 12px;
+}
+
+@media only screen and (min-width: 1000px){
+    .purpleman, .beige, .redman, .green {
+        border-radius: 5px;
+        height: 125px;
+        width: 90px;
+    }
+    
+    .purpleman img, .beige img, .redman img, .green img {
+        height:85px;
+        width: 90px;
+    }
+}
+
+.specs {
+    padding: 10px 20px 0 20px;
+}
+
+@media only screen and (min-width: 1000px){
+    .specs {
+        padding: 1px 5px 5px 7px;
+    }
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specs .gloop {
+    color: #fe8700c1;
+    font-size: 0.75em;
+    font-weight: bolder;
+}
+
+
+.specs .top {
+    color: #999999;
+    font-size: 0.75em;
+    font-weight: bolder;
+}
+
+.specs .gloop, .specs .top {
+    margin-bottom: 3px;
+    margin-top: 2px;
+    padding-bottom: 0;
+}
+
+@media only screen and (min-width: 1000px){
+    .specs .gloop, .specs .top {
+        font-size: 4px;
+        letter-spacing: 0.05px;
+        margin-bottom: 1px;
+    }
+}
+
+.specs .name, .specs .price {
+    font-size: 1.35em;
+    font-weight: bolder;
+    letter-spacing: 0.2px;
+    margin: 0;
+    padding-bottom: 3px;
+}
+
+@media only screen and (min-width: 1000px){
+    .specs .price img {
+        height: 7px;
+        width: 5px;
+    }
+    .specs .name, .specs .price {
+        font-size: 6.5px;
+        letter-spacing: 0.05px;
+        padding-bottom: 0.8px;
+    }
+}
+
+.specs .number, .specs .expire {
+    color:#999999;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.footerupsell {
+    border-bottom: 2px solid #55555529;
+    border-top: 2px solid #55555529;
+    display:flex;
+    flex-wrap: nowrap;
+    height: 550px;
+    padding-left: 30px;
+    width: 482.62px;
+}
+
+@media only screen and (min-width: 1000px){
+    .footerupsell {
+        border-bottom: 0.1px solid #55555529;
+        border-top: 0.1px solid #55555529;
+        height: 185px;
+        margin-left: 30px;
+        padding-left: 0;
+        width: 375px;
+    }
+}
+
+.textbox {
+    height: 400px;
+    left: 32px;
+    top: 148px;
+    width: 200px;
+}
+
+@media only screen and (min-width: 1000px){
+    .textbox {
+        top: 100px;
+        width: 190px;
+    }
+}
+
+.textbox .titlebox {
+    color: #FF3998;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-top: 40px;
+}
+
+@media only screen and (min-width: 1000px){
+    .textbox .titlebox {
+        font-size: 5px;
+        letter-spacing: 0.2px;
+    }
+}
+
+.textbox h1 {
+    font-size: 2.8em;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 30px;
+    width: 200px;
+}
+
+@media only screen and (min-width: 1000px){
+    .textbox h1 {
+        font-size: 1.05em;
+        margin-bottom: 10px;
+        margin-top: 8px;
+    }
+}
+
+.textbox .descbox {
+    color: #555555;
+    font-size: 1.23em;
+    letter-spacing: 0.5px;
+    line-height: 1.6em;
+    padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 1000px){
+    .textbox .descbox {
+        font-size: 0.43em;
+        letter-spacing: 0.1px;
+        margin-top: 0px;
+        padding-bottom: 5px;
+    }
+
+    .textbox .descbox br {
+        display: none;
+    } 
+}
+
+.image img {
+    height: 470px;
+    object-fit: contain;
+    padding-top: 82px;
+    width: 250px;
+}
+
+@media only screen and (min-width: 1000px){
+    .image img {
+        height: 150px;
+        left: 255px;
+        padding-top: 36px;
+        width: 150px;
+    }
+}
+
+footer {
+    color: #555555;
+    margin: 60px 0 70px 30px;
+}
+
+@media only screen and (min-width: 1000px){
+    footer {
+        margin: 40px 0 20px 30px;
+    }
+    
+    footer .block {
+        column-gap: 130px;
+        display: flex;
+    }
+    
+    footer img {
+        width: 60px;
+    }
+}
+
+footer p {
+    font-size: 1.2em;
+    letter-spacing: 0.02em;
+    padding: 15px 0;
+}
+
+@media only screen and (min-width: 1000px){
+    footer p {
+        font-size: 0.38em;
+        padding: 0;
+    }
+}
+
+footer .socialnet img {
+    padding: 0 4px;
+}
+
+@media only screen and (min-width: 1000px){
+    footer .socialnet img {
+        height: 6px;
+        padding: 0;
+        width: 6px;
+    }
+}
+
+.links {
+    column-gap: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 35px;
+    row-gap: 20px;
+}
+
+@media only screen and (min-width: 1000px){
+    .links {
+        column-gap: 20px;
+        padding: 0;
+    }
+}
+
+.about, .nft, .contact, .social {
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.about a, .nft a, .contact a, .social a {
+    color: #555555;
+    display: block;
+    font-size: 1.2em;
+    letter-spacing: 0.02em;
+    padding: 5px;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1000px){
+    .about h4, .nft h4, .contact h4, .social h4 {
+            font-size: 5.5px;
+            font-weight: 6px;
+            letter-spacing: 0.03em;
+        }
+    
+    .about a, .nft a, .contact a, .social a {
+        font-size: 6.5px;
+        padding: 2px 0;
+    }
+}
+
+footer .copyright {
+    color: #999999;
+    padding-top: 40px;
+}
+
+footer .launching {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px){
+    footer .copyright {
+        padding-top: 30px;
+    }
+
+    footer .launching {
+        color: #999999;
+        display: inline;
+        padding-top: 30px;
+    }
+
+    footer .bottom {
+        display: flex;
+        column-gap: 250px;
+    }
+}
